@@ -1,7 +1,248 @@
-{
-	"folders": [
-		{
-			"path": "."
-		}
-	]
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    </head>
+
+    <body>
+        <h1>My goals for the year</h1>
+
+        <hr>
+
+        <nav aria-label="primary-navigation">
+             <ul>
+                <li>
+                    <a href="#html">learn HTML</a>
+                </li>
+                <li>
+                    <a href="#vacation">Planning a vacation</a>
+                </li>
+             </ul>
+        </nav>
+
+        <hr>
+
+        <h2>Im ready to learn HTML</h2>
+        <p>This IS My First Web Page.</p>
+        <section>
+        <h3>My daily scheduele</h3>
+        <p>let me tell you how I</p>
+       
+        <hr>
+        <article id="html">
+        <h2>Im ready to learn HTML</h2>
+        <p>This IS My First Web Page.</p>
+
+        <h3>My daily scheduele</h3>
+        <p>let me tell you how:</p>
+            <ol>
+            <li>... I more about web dev.</li>
+            <li>... I plan out my scheduele </li>
+            <li>... I use resources from <abbr title=" Mozilla Developer Network">
+                <a href="https://developer.mozilla.org/">MDN</a>
+            </abbr>.</li>
+            </ol>
+            <aside>
+                <details>
+                    <summary>Guess the <mark></mark> number of hours </mark> I code per day</summary>
+                    <p>I Start at <time datetime="8:30"> 8:30am </time> and write it for <time datetime="PT3H"> one hour </time> in my computer science class then i get home and work on this website until i go to bed at 10 </p>
+                </details>
+            </aside>
+            </section>
+            <br>
+            <table>
+                <caption>My daily scheduele</caption>
+                <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Activity</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Morning</th>
+                    <td>
+                        <time datetime="8:30">8:30pm</time>-<time datetime="01:00">1hour</time>
+                    </td>
+                    <td>write code</td>
+                </tr>
+                <tr>
+                    <th scope="row">Going home from school to work on more code</th>
+                    <td>
+                        <time datetime="04:00">4:00pm</time>-<time datetime="10:00"6hour></time>
+                    </td>
+                    <td>At home working</td>
+                </tr>
+                <tr>
+                    <td>All ways working on code</td>
+                    <td>Going Home</td>
+                </tr>
+                <tr>
+                    <td>getting ready for bed</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">And this is what I do everyday for 6 days a week</td>
+                </tr>
+            </tfoot>
+            </table>
+        </article>
+        </p>
+        </section>
+        <hr>
+
+        <article id="vacation">
+
+        <h2>I'am  also planning a Vacation</h2>
+        <p>I've been working really hard and <em>
+        need a get away</em>.</p>
+        <p>I live in Canada so I want to visit a beach.</p>
+
+            <section>
+        <h3>places id like to visit</h3>
+        <ul>
+       <li> <p>I've heard good things about the caribean.</p>
+        </li>
+        <li>
+        <p>I've heard good things about going here</p>
+        <address>
+            Monico and Dubai
+        </address>
+        </li>
+         </ul>
+        </section>
+        <!-- TODO Add more places -->
+        <section>
+        <h3>places i want to avoid is</h3>
+        <dl>
+            <dt>North Pole</dt>
+            <dd>I hear this is <strong> cold</strong>!</dd>
+
+            <dt>South Pole</dt>
+            <dd> This is also cold.</dd>
+
+            <dt>Mountain Tops</dt>
+            <dd>These are also cold</dd>
+        </dl>
+        </section>
+    </article>
+    <hr>
+
+    <article id="contact">
+            <h2>Contact Me</h2>
+            <p>I'd really like to hear from you!</p>
+
+            <form action="https:/httppbin.org/get"method="get">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                <p>
+                    <label for="FirstName">First Name: </label>
+                    <input type="text" name="FirstName" id="FirstName"placeholder="Andrew" autocomplete="on" required autofocus>
+                </p>
+                <p>
+                    <label for="LastName">LastName: </label>
+                    <input type="text" name="LastName" id="LastName"placeholder="Santos" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="PassWord">password: </label>
+                    <input type="password" name="password" id="password"placeholder="your own secret" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="phone">phone: </label>
+                    <input type="tel" name="phone" id="phone"placeholder="1234566789" autocomplete="on" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                </p>
+                <p>
+                    <label for="decade">Favourite Decade: </label>
+                    <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+                </p>
+                <p>
+                    <label for="coffee">Favourite Coffee</label>
+                    <select name="Coffee" id="Coffee" multiple size="5">
+                        <optgroup label="Coffees">
+                        <option value="regular Coffee">Regular Coffee</option>
+                        <option value="Iced Coffee">Iced Coffee</option>
+                    </optgroup>
+                    <optgroup label="Espresso Drinks">
+                        <option value="Latte">Latte</option>
+                        <option value="Cappuccion">Cappuccion</option>
+                        <option value="Cortado">Cortado</option>
+                        <option value="Americano">Americano</option>
+                    </optgroup>
+                        <option value="Other">Other</option>
+                    </select>
+                </p>
+               <!--  <p>
+                    <label for="coffee">Favourite Coffee</label>
+                    <input type="text" name="coffee" id="coffee" list="coffee-list">
+                    <datalist id="coffee-list">
+                        <option value="coffee">
+                        <option value="latte">
+                        <option value="espresso">
+                        <option value="cortado">
+                        <option value="americano">
+                        <option value="other">
+                    </datalist>
+                </p> -->
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>What is your favourite food</legend>
+                <p>
+                    <input type="radio" name="food"  id="tacos" value="tacos">
+                    <label for="tacos">Tacos</label>
+                </p>
+                <p>
+                    <input type="radio" name="food"  id="pizza" value="pizza">
+                    <label for="pizza">Pizza</label>
+                </p>
+                <p>
+                    <input type="radio" name="food"  id="other" value="other">
+                    <label for="other">Other</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Do you have pets</legend>
+                <p>
+                    <input type="checkbox" name="pets" id="dog" value="dog">
+                    <label for="dog">Dog</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="cat" value="cat">
+                    <label for="cat">Cat</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="fish" value="fish">
+                    <label for="fish">Fish</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="other pet" value="other pet">
+                    <label for="other pet">Other Pet</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend> Send Me A Note</legend>
+                <label for="message">Your Message:</label>
+                <textrarea name="message" id="message" cols="30" rows="10" placeholder="type your message here"></textrarea>
+            </fieldset>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="Submit" formaction="https://httppbin.org" formmethod="post">Post</button>
+            <button type="reset">Reset</button>
+            </form>
+    </article>
+
+        <hr>
+        <footer>
+        <p>
+        &lt;&lt;&lt; &copy; <a href="about.html" > Andrew Santos</a> &gt;&gt;&gt;
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+        </p>
+        </footer>
+    </body>
+</html>
